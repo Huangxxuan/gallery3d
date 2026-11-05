@@ -1,0 +1,145 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://gallery3d.local/exhibition.schema.json",
+  "title": "Gallery3D Exhibition Configuration",
+  "description": "3D 摄影展布展数据契约：作品库 + 四厅 + 墙面挂位 + 射灯（ADR-0005）",
+  "type": "object",
+  "required": ["schemaVersion", "artworks", "halls"],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": { "type": "integer", "const": 1 },
+    "name": { "type": "string", "maxLength": 80, "default": "我的摄影展" },
+    "updatedAt": { "type": "string", "format": "date-time" },
+    "settings": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "ambientIntensity": { "type": "number", "minimum": 0, "maximum": 1, "default": 0.05 },
+        "entranceWash": { "type": "number", "minimum": 0, "maximum": 1, "default": 0.12 },
+        "fogNear": { "type": "number", "minimum": 1, "default": 25 },
+        "fogFar": { "type": "number", "minimum": 10, "default": 120 },
+        "perfMode": { "type": "string", "enum": ["standard", "performance"], "default": "standard" },
+        "mapVisibleInWalk": { "type": "boolean", "default": false }
+      }
+    },
+    "artworks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "fileName", "src", "widthPx", "heightPx", "orientation"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "pattern": "^art_[a-z0-9_]+$" },
+          "fileName": { "type": "string" },
+          "src": { "type": "string", "description": "相对路径（public/photos 下）或会话内 ObjectURL key" },
+          "widthPx": { "type": "integer", "minimum": 1 },
+          "heightPx": { "type": "integer", "minimum": 1 },
+          "orientation": { "type": "string", "enum": ["portrait", "landscape", "square"] },
+          "ratioClass": {
+            "type": "string",
+            "enum": ["2:3", "3:4", "9:16", "16:9", "3:2", "4:3", "custom"],
+            "description": "custom 时由 widthPx/heightPx 直接推装框，零裁剪"
+          },
+          "textureTier": { "type": "integer", "enum": [2048, 4096], "default": 2048 },
+          "heicConverted": { "type": "boolean", "default": false },
+          "meta": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "title": { "type": "string" },
+              "artist": { "type": "string" },
+              "takenAt": { "type": "string" },
+              "location": { "type": "string" },
+              "note": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "halls": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "required": ["id", "index", "name", "rect", "walls"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "pattern": "^hall_[1-4]$" },
+          "index": { "type": "integer", "minimum": 1, "maximum": 4 },
+          "name": { "type": "string", "maxLength": 40 },
+          "rect": {
+            "type": "object",
+            "description": "厅长/宽/层高，米；四厅构造器参数",
+            "required": ["length", "width", "height"],
+            "properties": {
+              "length": { "type": "number", "minimum": 8, "maximum": 60 },
+              "width": { "type": "number", "minimum": 6, "maximum": 40 },
+              "height": { "type": "number", "default": 4 }
+            }
+          },
+          "walls": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["id", "axis", "length", "slots"],
+              "additionalProperties": false,
+              "properties": {
+                "id": { "type": "string", "pattern": "^wall_[1-4]_[a-z0-9_]+$" },
+                "axis": { "type": "string", "enum": ["x", "z"], "description": "墙面走向" },
+                "length": { "type": "number", "minimum": 2 },
+                "height": { "type": "number", "default": 4 },
+                "openings": {
+                  "type": "array",
+                  "description": "门洞洞口（米，沿墙坐标区间），碰撞与可挂区域扣除",
+                  "items": {
+                    "type": "object",
+                    "required": ["from", "to"],
+                    "properties": {
+                      "from": { "type": "number" },
+                      "to": { "type": "number" }
+                    }
+                  }
+                },
+                "slots": {
+                  "type": "array",
+                  "items": { "$ref": "#/$defs/slot" }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "slot": {
+      "type": "object",
+      "description": "挂位：一幅在展作品在某面墙上的安放记录与专属射灯",
+      "required": ["id", "artworkId", "offsetOnWall", "centerHeight", "sizeTier", "spot"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "pattern": "^slot_[a-z0-9_]+$" },
+        "artworkId": { "type": "string", "description": "引用 artworks[].id" },
+        "offsetOnWall": { "type": "number", "description": "装裱中心沿墙面的坐标，米；吸附与中缝校验基于此值" },
+        "centerHeight": { "type": "number", "default": 1.5, "minimum": 0.8, "maximum": 3 },
+        "sizeTier": { "type": "string", "enum": ["S", "M", "L"], "default": "M" },
+        "spot": {
+          "type": "object",
+          "required": ["intensity", "angle", "penumbra", "colorKelvin", "pitchDeg", "enabled"],
+          "additionalProperties": false,
+          "properties": {
+            "intensity": { "type": "number", "minimum": 0.5, "maximum": 3, "default": 1.4 },
+            "angle": { "type": "number", "default": 0.2856, "description": "弧度，π/11" },
+            "penumbra": { "type": "number", "minimum": 0, "maximum": 1, "default": 0.55 },
+            "decay": { "type": "number", "default": 2 },
+            "colorKelvin": { "type": "integer", "minimum": 3000, "maximum": 4500, "default": 3500 },
+            "pitchDeg": { "type": "number", "default": 30, "minimum": 15, "maximum": 60 },
+            "enabled": { "type": "boolean", "default": true },
+            "castShadow": { "type": "boolean", "default": true, "description": "性能档全局强制 false" }
+          }
+        }
+      }
+    }
+  }
+}

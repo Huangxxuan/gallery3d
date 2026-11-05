@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1680" height="1120" viewBox="0 0 1680 1120">
+<defs>
+  <marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+    <path d="M0,0 L9,4.5 L0,9 z" fill="#b91c1c"/>
+  </marker>
+  <pattern id="voidDot" width="7" height="7" patternUnits="userSpaceOnUse">
+    <rect width="7" height="7" fill="#f1f0ee"/>
+    <circle cx="1.6" cy="1.6" r="0.9" fill="#cfccc5"/>
+  </pattern>
+</defs>
+<rect width="1680" height="1120" fill="#ffffff"/>
+<text x="60" y="48" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="22" font-weight="800" fill="#1f2937">3D 摄影展布展漫游系统 · 平面设计图</text>
+<text x="60" y="76" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="11" fill="#6b7280">2×2 组团 · 蛇形单向回流 ｜ 入口/出口位于东侧（南入北出）｜ v6 圆拱门 ｜ 2026-10-20 ｜ 单位：米</text>
+<line x1="60" y1="92" x2="1620" y2="92" stroke="#e5e7eb" stroke-width="1"/>
+<rect x="326" y="359.4" width="23.4" height="137.8" fill="url(#voidDot)" stroke="none"/>
+<rect x="326" y="159.2" width="23.4" height="169" fill="url(#voidDot)" stroke="none"/>
+<rect x="123.2" y="297" width="202.8" height="31.2" fill="url(#voidDot)" stroke="none"/>
+<rect x="349.4" y="297" width="234" height="31.2" fill="url(#voidDot)" stroke="none"/>
+<rect x="583.4" y="419.2" width="104" height="78" fill="#eef2ff" stroke="none"/>
+<rect x="349.4" y="328.2" width="234" height="169" fill="#f8fafc" stroke="none"/>
+<rect x="92" y="328.2" width="234" height="169" fill="#f8fafc" stroke="none"/>
+<rect x="92" y="128" width="234" height="169" fill="#f8fafc" stroke="none"/>
+<rect x="349.4" y="128" width="234" height="169" fill="#f8fafc" stroke="none"/>
+<rect x="583.4" y="229.4" width="104" height="104" fill="#eef2ff" stroke="none"/>
+<rect x="326" y="328.2" width="23.4" height="31.2" fill="#e2e0da" stroke="none"/>
+<rect x="92" y="297" width="31.2" height="31.2" fill="#e2e0da" stroke="none"/>
+<rect x="326" y="128" width="23.4" height="31.2" fill="#e2e0da" stroke="none"/>
+<line x1="583.4" y1="419.2" x2="687.4" y2="419.2" stroke="#111827" stroke-width="2.6" stroke-linecap="square"/>
+<line x1="583.4" y1="497.2" x2="687.4" y2="497.2" stroke="#111827" stroke-width="2.6" stroke-linecap="square"/>
+<line x1="687.4" y1="497.2" x2="687.4" y2="477.7" stroke="#111827" stroke-width="2.6" stroke-linecap="square"/>
+<line x1="687.4" y1="438.7" x2="687.4" y2="419.2" stroke="#111827" stroke-width="2.6" stroke-linecap="square"/>
+<line x1="583.4" y1="497.2" x2="583.4" y2="477.7" stroke="#111827" stroke-width="2.6" stroke-linecap="square"/>
+<line x1="583.4" y1="438.7" x2="583.4" y2="419.2" stroke="#111827" stroke-width="2.6" stroke-linecap="square"/>
+<line x1="349.4" y1="328.2" x2="583.4" y2="328.2" stroke="#111827" stroke-width="2.6" stroke-linecap="square"/>
+<line x1="349.4" y1="497.2" x2="583.4" y2="497.2" stroke="#111827" stroke-width="2.6" stroke-linecap="square"/>
+<line x1="583.4" y1="497.2" x2="583.4" y2="477.7" stroke="#111827" stroke-width="2.6" stroke-linecap="square"/>
+<line x1="583.4" y1="438.7" x2="583.4" y2="328.2" stroke="#111827" stroke-width="2.6" stroke-linecap="square"/>
+<line x1="349.4" y1="497.2" x2="349.4" y2="355.5" stroke="#111827" stroke-width="2.6" stroke-linecap="square"/>
+<line x1="349.4" y1="332.1" x2="349.4" y2="328.2" stroke="#111827" stroke-width="2.6" stroke-linecap="square"/>
+<line x1="92" y1="328.2" x2="95.9" y2="328.2" stroke="#111827" stroke-width="2.6" stroke-linecap="square"/>
+<line x1="119.3" y1="328.2" x2="326" y2="328.2" stroke="#111827" stroke-width="2.6" stroke-linecap="square"/>
+<line x1="92" y1="497.2" x2="326" y2="497.2" stroke="#111827" stroke-width="2.6" stroke-linecap="square"/>
+<line x1="326" y1="497.2" x2="326" y2="355.5" stroke="#111827" stroke-width="2.6" stroke-linecap="square"/>
+<line x1="326" y1="332.1" x2="326" y2="328.2" stroke="#111827" stroke-width="2.6" stroke-linecap="square"/>
+<line x1="92" y1="497.2" x2="92" y2="328.2" stroke="#111827" stroke-width="2.6" stroke-linecap="square"/>
+<line x1="92" y1="128" x2="326" y2="128" stroke="#111827" stroke-width="2.6" stroke-linecap="square"/>
+<line x1="92" y1="297" x2="95.9" y2="297" stroke="#111827" stroke-width="2.6" stroke-linecap="square"/>
+<line x1="119.3" y1="297" x2="326" y2="297" stroke="#111827" stroke-width="2.6" stroke-linecap="square"/>
+<line x1="326" y1="297" x2="326" y2="155.3" stroke="#111827" stroke-width="2.6" stroke-linecap="square"/>
+<line x1="326" y1="131.9" x2="326" y2="128" stroke="#111827" stroke-width="2.6" stroke-linecap="square"/>
+<line x1="92" y1="297" x2="92" y2="128" stroke="#111827" stroke-width="2.6" stroke-linecap="square"/>
+<line x1="349.4" y1="128" x2="583.4" y2="128" stroke="#111827" stroke-width="2.6" stroke-linecap="square"/>
+<line x1="349.4" y1="297" x2="583.4" y2="297" stroke="#111827" stroke-width="2.6" stroke-linecap="square"/>
+<line x1="583.4" y1="297" x2="583.4" y2="290.5" stroke="#111827" stroke-width="2.6" stroke-linecap="square"/>
+<line x1="583.4" y1="251.5" x2="583.4" y2="128" stroke="#111827" stroke-width="2.6" stroke-linecap="square"/>
+<line x1="349.4" y1="297" x2="349.4" y2="155.3" stroke="#111827" stroke-width="2.6" stroke-linecap="square"/>
+<line x1="349.4" y1="131.9" x2="349.4" y2="128" stroke="#111827" stroke-width="2.6" stroke-linecap="square"/>
+<line x1="583.4" y1="229.4" x2="687.4" y2="229.4" stroke="#111827" stroke-width="2.6" stroke-linecap="square"/>
+<line x1="583.4" y1="333.4" x2="687.4" y2="333.4" stroke="#111827" stroke-width="2.6" stroke-linecap="square"/>
+<line x1="687.4" y1="333.4" x2="687.4" y2="290.5" stroke="#111827" stroke-width="2.6" stroke-linecap="square"/>
+<line x1="687.4" y1="251.5" x2="687.4" y2="229.4" stroke="#111827" stroke-width="2.6" stroke-linecap="square"/>
+<line x1="583.4" y1="333.4" x2="583.4" y2="290.5" stroke="#111827" stroke-width="2.6" stroke-linecap="square"/>
+<line x1="583.4" y1="251.5" x2="583.4" y2="229.4" stroke="#111827" stroke-width="2.6" stroke-linecap="square"/>
+<line x1="326" y1="328.2" x2="349.4" y2="328.2" stroke="#111827" stroke-width="2.6" stroke-linecap="square"/>
+<line x1="326" y1="359.4" x2="349.4" y2="359.4" stroke="#111827" stroke-width="2.6" stroke-linecap="square"/>
+<line x1="349.4" y1="359.4" x2="349.4" y2="355.5" stroke="#111827" stroke-width="2.6" stroke-linecap="square"/>
+<line x1="349.4" y1="332.1" x2="349.4" y2="328.2" stroke="#111827" stroke-width="2.6" stroke-linecap="square"/>
+<line x1="326" y1="359.4" x2="326" y2="355.5" stroke="#111827" stroke-width="2.6" stroke-linecap="square"/>
+<line x1="326" y1="332.1" x2="326" y2="328.2" stroke="#111827" stroke-width="2.6" stroke-linecap="square"/>
+<line x1="92" y1="297" x2="95.9" y2="297" stroke="#111827" stroke-width="2.6" stroke-linecap="square"/>
+<line x1="119.3" y1="297" x2="123.2" y2="297" stroke="#111827" stroke-width="2.6" stroke-linecap="square"/>
+<line x1="92" y1="328.2" x2="95.9" y2="328.2" stroke="#111827" stroke-width="2.6" stroke-linecap="square"/>
+<line x1="119.3" y1="328.2" x2="123.2" y2="328.2" stroke="#111827" stroke-width="2.6" stroke-linecap="square"/>
+<line x1="123.2" y1="328.2" x2="123.2" y2="297" stroke="#111827" stroke-width="2.6" stroke-linecap="square"/>
+<line x1="92" y1="328.2" x2="92" y2="297" stroke="#111827" stroke-width="2.6" stroke-linecap="square"/>
+<line x1="326" y1="128" x2="349.4" y2="128" stroke="#111827" stroke-width="2.6" stroke-linecap="square"/>
+<line x1="326" y1="159.2" x2="349.4" y2="159.2" stroke="#111827" stroke-width="2.6" stroke-linecap="square"/>
+<line x1="349.4" y1="159.2" x2="349.4" y2="155.3" stroke="#111827" stroke-width="2.6" stroke-linecap="square"/>
+<line x1="349.4" y1="131.9" x2="349.4" y2="128" stroke="#111827" stroke-width="2.6" stroke-linecap="square"/>
+<line x1="326" y1="159.2" x2="326" y2="155.3" stroke="#111827" stroke-width="2.6" stroke-linecap="square"/>
+<line x1="326" y1="131.9" x2="326" y2="128" stroke="#111827" stroke-width="2.6" stroke-linecap="square"/>
+<line x1="687.4" y1="477.7" x2="667.9" y2="477.7" stroke="#1f2937" stroke-width="1.1"/>
+<line x1="687.4" y1="438.7" x2="667.9" y2="438.7" stroke="#1f2937" stroke-width="1.1"/>
+<path d="M 687.4 458.2 A 19.5 19.5 0 0 0 667.9 477.7" fill="none" stroke="#6b7280" stroke-width="0.7"/>
+<path d="M 687.4 458.2 A 19.5 19.5 0 0 1 667.9 438.7" fill="none" stroke="#6b7280" stroke-width="0.7"/>
+<line x1="687.4" y1="290.5" x2="667.9" y2="290.5" stroke="#1f2937" stroke-width="1.1"/>
+<line x1="687.4" y1="251.5" x2="667.9" y2="251.5" stroke="#1f2937" stroke-width="1.1"/>
+<path d="M 687.4 271 A 19.5 19.5 0 0 0 667.9 290.5" fill="none" stroke="#6b7280" stroke-width="0.7"/>
+<path d="M 687.4 271 A 19.5 19.5 0 0 1 667.9 251.5" fill="none" stroke="#6b7280" stroke-width="0.7"/>
+<line x1="697.8" y1="458.2" x2="664" y2="458.2" stroke="#b91c1c" stroke-width="1.7" stroke-dasharray="7 5" marker-end="url(#arrow)" fill="none" stroke-linecap="round"/>
+<line x1="664" y1="458.2" x2="370.2" y2="458.2" stroke="#b91c1c" stroke-width="1.7" stroke-dasharray="7 5" marker-end="url(#arrow)" fill="none" stroke-linecap="round"/>
+<line x1="370.2" y1="458.2" x2="370.2" y2="343.8" stroke="#b91c1c" stroke-width="1.7" stroke-dasharray="7 5" marker-end="url(#arrow)" fill="none" stroke-linecap="round"/>
+<line x1="370.2" y1="343.8" x2="310.4" y2="343.8" stroke="#b91c1c" stroke-width="1.7" stroke-dasharray="7 5" marker-end="url(#arrow)" fill="none" stroke-linecap="round"/>
+<line x1="310.4" y1="343.8" x2="107.6" y2="343.8" stroke="#b91c1c" stroke-width="1.7" stroke-dasharray="7 5" marker-end="url(#arrow)" fill="none" stroke-linecap="round"/>
+<line x1="107.6" y1="343.8" x2="107.6" y2="281.4" stroke="#b91c1c" stroke-width="1.7" stroke-dasharray="7 5" marker-end="url(#arrow)" fill="none" stroke-linecap="round"/>
+<line x1="107.6" y1="281.4" x2="107.6" y2="143.6" stroke="#b91c1c" stroke-width="1.7" stroke-dasharray="7 5" marker-end="url(#arrow)" fill="none" stroke-linecap="round"/>
+<line x1="107.6" y1="143.6" x2="370.2" y2="143.6" stroke="#b91c1c" stroke-width="1.7" stroke-dasharray="7 5" marker-end="url(#arrow)" fill="none" stroke-linecap="round"/>
+<line x1="370.2" y1="143.6" x2="565.2" y2="143.6" stroke="#b91c1c" stroke-width="1.7" stroke-dasharray="7 5" marker-end="url(#arrow)" fill="none" stroke-linecap="round"/>
+<line x1="565.2" y1="143.6" x2="565.2" y2="271" stroke="#b91c1c" stroke-width="1.7" stroke-dasharray="7 5" marker-end="url(#arrow)" fill="none" stroke-linecap="round"/>
+<line x1="565.2" y1="271" x2="635.4" y2="271" stroke="#b91c1c" stroke-width="1.7" stroke-dasharray="7 5" marker-end="url(#arrow)" fill="none" stroke-linecap="round"/>
+<line x1="635.4" y1="271" x2="697.8" y2="271" stroke="#b91c1c" stroke-width="1.7" stroke-dasharray="7 5" marker-end="url(#arrow)" fill="none" stroke-linecap="round"/>
+<circle cx="635.4" cy="458.2" r="11.5" fill="#ffffff" stroke="#b91c1c" stroke-width="1.8"/>
+<text x="635.4" y="462.4" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="12" font-weight="800" fill="#b91c1c" text-anchor="middle">1</text>
+<circle cx="466.4" cy="412.7" r="11.5" fill="#ffffff" stroke="#b91c1c" stroke-width="1.8"/>
+<text x="466.4" y="416.9" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="12" font-weight="800" fill="#b91c1c" text-anchor="middle">2</text>
+<circle cx="209" cy="412.7" r="11.5" fill="#ffffff" stroke="#b91c1c" stroke-width="1.8"/>
+<text x="209" y="416.9" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="12" font-weight="800" fill="#b91c1c" text-anchor="middle">3</text>
+<circle cx="209" cy="212.5" r="11.5" fill="#ffffff" stroke="#b91c1c" stroke-width="1.8"/>
+<text x="209" y="216.7" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="12" font-weight="800" fill="#b91c1c" text-anchor="middle">4</text>
+<circle cx="466.4" cy="212.5" r="11.5" fill="#ffffff" stroke="#b91c1c" stroke-width="1.8"/>
+<text x="466.4" y="216.7" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="12" font-weight="800" fill="#b91c1c" text-anchor="middle">5</text>
+<circle cx="635.4" cy="271" r="11.5" fill="#ffffff" stroke="#b91c1c" stroke-width="1.8"/>
+<text x="635.4" y="275.2" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="12" font-weight="800" fill="#b91c1c" text-anchor="middle">6</text>
+<text x="635.4" y="456.2" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="11.5" font-weight="700" fill="#1f2937" text-anchor="middle">入口厅</text>
+<text x="635.4" y="470.2" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="8.5" fill="#6b7280" text-anchor="middle">8×6m</text>
+<text x="466.4" y="316.2" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="15" font-weight="800" fill="#1f2937" text-anchor="middle">展区一</text>
+<text x="466.4" y="301.2" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="9.5" fill="#6b7280" text-anchor="middle">首站 · 右下</text>
+<text x="466.4" y="513.2" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="9.5" fill="#6b7280" text-anchor="middle">18×13m · 精选15幅</text>
+<text x="209" y="316.2" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="15" font-weight="800" fill="#1f2937" text-anchor="middle">展区二</text>
+<text x="209" y="301.2" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="9.5" fill="#6b7280" text-anchor="middle">左下</text>
+<text x="209" y="513.2" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="9.5" fill="#6b7280" text-anchor="middle">18×13m · 精选15幅</text>
+<text x="209" y="116" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="15" font-weight="800" fill="#1f2937" text-anchor="middle">展区三</text>
+<text x="209" y="101" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="9.5" fill="#6b7280" text-anchor="middle">左上</text>
+<text x="209" y="313" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="9.5" fill="#6b7280" text-anchor="middle">18×13m · 精选15幅</text>
+<text x="466.4" y="116" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="15" font-weight="800" fill="#1f2937" text-anchor="middle">展区四</text>
+<text x="466.4" y="101" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="9.5" fill="#6b7280" text-anchor="middle">末站 · 右上</text>
+<text x="466.4" y="313" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="9.5" fill="#6b7280" text-anchor="middle">18×13m · 精选15幅</text>
+<text x="635.4" y="279.4" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="11.5" font-weight="700" fill="#1f2937" text-anchor="middle">出口厅</text>
+<text x="635.4" y="293.4" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="8.5" fill="#6b7280" text-anchor="middle">8×6m</text>
+<text x="337.7" y="346.8" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="8" fill="#6b7280" text-anchor="middle">廊</text>
+<text x="107.6" y="315.6" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="8" fill="#6b7280" text-anchor="middle">廊</text>
+<text x="337.7" y="146.6" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="8" fill="#6b7280" text-anchor="middle">廊</text>
+<text x="578.4" y="454.2" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="8" fill="#b91c1c" text-anchor="end">入口</text>
+<text x="354.4" y="339.8" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="8" fill="#b91c1c" text-anchor="start">→展区二</text>
+<text x="107.6" y="341.2" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="8" fill="#b91c1c" text-anchor="middle">→展区三</text>
+<text x="321" y="339.8" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="8" fill="#b91c1c" text-anchor="end">自展区一</text>
+<text x="107.6" y="292" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="8" fill="#b91c1c" text-anchor="middle">自展区二</text>
+<text x="321" y="139.6" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="8" fill="#b91c1c" text-anchor="end">→展区四</text>
+<text x="578.4" y="267" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="8" fill="#b91c1c" text-anchor="end">出口</text>
+<text x="354.4" y="139.6" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="8" fill="#b91c1c" text-anchor="start">自展区三</text>
+<text x="701.4" y="462.2" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10" font-weight="700" fill="#b91c1c">入（外门3.0m）</text>
+<text x="701.4" y="275" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10" font-weight="700" fill="#b91c1c">出（外门3.0m）</text>
+<line x1="92" y1="531.2" x2="326" y2="531.2" stroke="#6b7280" stroke-width="0.9"/>
+<line x1="92" y1="527.2" x2="92" y2="535.2" stroke="#6b7280"/>
+<text x="209" y="544.2" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="9.5" fill="#6b7280" text-anchor="middle">18</text>
+<line x1="326" y1="531.2" x2="349.4" y2="531.2" stroke="#6b7280" stroke-width="0.9"/>
+<line x1="326" y1="527.2" x2="326" y2="535.2" stroke="#6b7280"/>
+<text x="337.7" y="544.2" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="9.5" fill="#6b7280" text-anchor="middle">1.8</text>
+<line x1="349.4" y1="531.2" x2="583.4" y2="531.2" stroke="#6b7280" stroke-width="0.9"/>
+<line x1="349.4" y1="527.2" x2="349.4" y2="535.2" stroke="#6b7280"/>
+<text x="466.4" y="544.2" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="9.5" fill="#6b7280" text-anchor="middle">18</text>
+<line x1="583.4" y1="531.2" x2="687.4" y2="531.2" stroke="#6b7280" stroke-width="0.9"/>
+<line x1="583.4" y1="527.2" x2="583.4" y2="535.2" stroke="#6b7280"/>
+<text x="635.4" y="544.2" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="9.5" fill="#6b7280" text-anchor="middle">8</text>
+<line x1="687.4" y1="527.2" x2="687.4" y2="535.2" stroke="#6b7280"/>
+<line x1="66" y1="497.2" x2="66" y2="328.2" stroke="#6b7280" stroke-width="0.9"/>
+<line x1="62" y1="497.2" x2="70" y2="497.2" stroke="#6b7280"/>
+<g transform="translate(58,412.7) rotate(-90)"><text font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="9.5" fill="#6b7280" text-anchor="middle">13</text></g>
+<line x1="66" y1="328.2" x2="66" y2="297" stroke="#6b7280" stroke-width="0.9"/>
+<line x1="62" y1="328.2" x2="70" y2="328.2" stroke="#6b7280"/>
+<g transform="translate(58,312.6) rotate(-90)"><text font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="9.5" fill="#6b7280" text-anchor="middle">2.4</text></g>
+<line x1="66" y1="297" x2="66" y2="128" stroke="#6b7280" stroke-width="0.9"/>
+<line x1="62" y1="297" x2="70" y2="297" stroke="#6b7280"/>
+<g transform="translate(58,212.5) rotate(-90)"><text font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="9.5" fill="#6b7280" text-anchor="middle">13</text></g>
+<line x1="62" y1="128" x2="70" y2="128" stroke="#6b7280"/>
+<line x1="92" y1="112" x2="687.4" y2="112" stroke="#1f2937" stroke-width="1.1"/>
+<line x1="92" y1="107" x2="92" y2="117" stroke="#1f2937"/>
+<line x1="687.4" y1="107" x2="687.4" y2="117" stroke="#1f2937"/>
+<text x="389.7" y="106" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10.5" font-weight="700" fill="#1f2937" text-anchor="middle">占地总宽 45.8m</text>
+<g transform="translate(709.4,312.6) rotate(90)"><text font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10.5" font-weight="700" fill="#1f2937" text-anchor="middle">总深 28.4m</text></g>
+<text x="92" y="138" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="13" font-weight="700" fill="#1f2937">总平面图  1:220（示意比例）｜ 2×2 组团 · 蛇形单向回流</text>
+<rect x="80" y="800" width="252" height="182" fill="#f8fafc" stroke="none"/>
+<line x1="80" y1="800" x2="332" y2="800" stroke="#111827" stroke-width="4" stroke-linecap="square"/>
+<line x1="80" y1="982" x2="332" y2="982" stroke="#111827" stroke-width="4" stroke-linecap="square"/>
+<line x1="332" y1="982" x2="332" y2="961" stroke="#111827" stroke-width="4" stroke-linecap="square"/>
+<line x1="332" y1="919" x2="332" y2="800" stroke="#111827" stroke-width="4" stroke-linecap="square"/>
+<line x1="80" y1="982" x2="80" y2="829.4" stroke="#111827" stroke-width="4" stroke-linecap="square"/>
+<line x1="80" y1="804.2" x2="80" y2="800" stroke="#111827" stroke-width="4" stroke-linecap="square"/>
+<text x="340" y="940" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="9" font-weight="700" fill="#b91c1c">入口（自入口厅，门洞3.0m）</text>
+<text x="72" y="812.8" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="9" font-weight="700" fill="#b91c1c" text-anchor="end">通往展区二（暗廊1.8m）</text>
+<line x1="95.4" y1="810" x2="120.6" y2="810" stroke="#b45309" stroke-width="5"/>
+<text x="108" y="823" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="6.5" fill="#b45309" text-anchor="middle">A01</text>
+<circle cx="108" cy="818.4" r="2.2" fill="#d97706"/>
+<line x1="95.4" y1="972" x2="120.6" y2="972" stroke="#b45309" stroke-width="5"/>
+<text x="108" y="967" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="6.5" fill="#b45309" text-anchor="middle">C01</text>
+<circle cx="108" cy="963.6" r="2.2" fill="#d97706"/>
+<line x1="144.4" y1="810" x2="169.6" y2="810" stroke="#b45309" stroke-width="5"/>
+<text x="157" y="823" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="6.5" fill="#b45309" text-anchor="middle">A02</text>
+<circle cx="157" cy="818.4" r="2.2" fill="#d97706"/>
+<line x1="144.4" y1="972" x2="169.6" y2="972" stroke="#b45309" stroke-width="5"/>
+<text x="157" y="967" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="6.5" fill="#b45309" text-anchor="middle">C02</text>
+<circle cx="157" cy="963.6" r="2.2" fill="#d97706"/>
+<line x1="193.4" y1="810" x2="218.6" y2="810" stroke="#b45309" stroke-width="5"/>
+<text x="206" y="823" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="6.5" fill="#b45309" text-anchor="middle">A03</text>
+<circle cx="206" cy="818.4" r="2.2" fill="#d97706"/>
+<line x1="193.4" y1="972" x2="218.6" y2="972" stroke="#b45309" stroke-width="5"/>
+<text x="206" y="967" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="6.5" fill="#b45309" text-anchor="middle">C03</text>
+<circle cx="206" cy="963.6" r="2.2" fill="#d97706"/>
+<line x1="242.4" y1="810" x2="267.6" y2="810" stroke="#b45309" stroke-width="5"/>
+<text x="255" y="823" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="6.5" fill="#b45309" text-anchor="middle">A04</text>
+<circle cx="255" cy="818.4" r="2.2" fill="#d97706"/>
+<line x1="242.4" y1="972" x2="267.6" y2="972" stroke="#b45309" stroke-width="5"/>
+<text x="255" y="967" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="6.5" fill="#b45309" text-anchor="middle">C04</text>
+<circle cx="255" cy="963.6" r="2.2" fill="#d97706"/>
+<line x1="291.4" y1="810" x2="316.6" y2="810" stroke="#b45309" stroke-width="5"/>
+<text x="304" y="823" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="6.5" fill="#b45309" text-anchor="middle">A05</text>
+<circle cx="304" cy="818.4" r="2.2" fill="#d97706"/>
+<line x1="291.4" y1="972" x2="316.6" y2="972" stroke="#b45309" stroke-width="5"/>
+<text x="304" y="967" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="6.5" fill="#b45309" text-anchor="middle">C05</text>
+<circle cx="304" cy="963.6" r="2.2" fill="#d97706"/>
+<line x1="90" y1="942.1" x2="90" y2="967.3" stroke="#b45309" stroke-width="5"/>
+<text x="99" y="957.2" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="6.5" fill="#b45309" text-anchor="start">B01</text>
+<circle cx="98.4" cy="954.7" r="2.2" fill="#d97706"/>
+<line x1="90" y1="893.1" x2="90" y2="918.3" stroke="#b45309" stroke-width="5"/>
+<text x="99" y="908.2" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="6.5" fill="#b45309" text-anchor="start">B02</text>
+<circle cx="98.4" cy="905.7" r="2.2" fill="#d97706"/>
+<line x1="90" y1="844.1" x2="90" y2="869.3" stroke="#b45309" stroke-width="5"/>
+<text x="99" y="859.2" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="6.5" fill="#b45309" text-anchor="start">B03</text>
+<circle cx="98.4" cy="856.7" r="2.2" fill="#d97706"/>
+<line x1="322" y1="871.4" x2="322" y2="896.6" stroke="#b45309" stroke-width="5"/>
+<text x="313" y="886.5" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="6.5" fill="#b45309" text-anchor="end">D01</text>
+<circle cx="313.6" cy="884" r="2.2" fill="#d97706"/>
+<line x1="322" y1="822.4" x2="322" y2="847.6" stroke="#b45309" stroke-width="5"/>
+<text x="313" y="837.5" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="6.5" fill="#b45309" text-anchor="end">D02</text>
+<circle cx="313.6" cy="835" r="2.2" fill="#d97706"/>
+<rect x="108" y="828" width="196" height="126" fill="none" stroke="#6b7280" stroke-width="1" stroke-dasharray="4 5" rx="6"/>
+<text x="206" y="888" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="11" fill="#6b7280" text-anchor="middle">观画活动区</text>
+<text x="206" y="902" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="9" fill="#6b7280" text-anchor="middle">两门对角布置，强制观众扫展全厅</text>
+<line x1="108" y1="840" x2="157" y2="840" stroke="#b45309" stroke-width="0.9"/>
+<line x1="108" y1="837" x2="108" y2="843" stroke="#b45309"/>
+<line x1="157" y1="837" x2="157" y2="843" stroke="#b45309"/>
+<text x="132.5" y="852" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="8.5" fill="#b45309" text-anchor="middle">挂位中到中 3.50m（全馆统一 3.5m）</text>
+<text x="80" y="784" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="13" font-weight="700" fill="#1f2937">标准展厅挂位详图（以展区一为样板）1:70</text>
+<text x="80" y="1038" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="9.5" fill="#374151">A/C 长墙各 5 位 ｜ B 端墙 3 位 · D 端墙 2 位 ｜ 合计 15 幅精选（端部留白≥1.45m）｜ 赭线=挂位，橙点=射灯位（每幅一灯）</text>
+<text x="540" y="786" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="13" font-weight="700" fill="#1f2937">蛇形参观序列（单向回流，可往返逆行）</text>
+<circle cx="548" cy="808" r="10" fill="#fff" stroke="#b91c1c" stroke-width="1.5"/>
+<text x="548" y="812" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10" font-weight="800" fill="#b91c1c" text-anchor="middle">1</text>
+<text x="566" y="812" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10.5" font-weight="700" fill="#1f2937">入口厅</text>
+<text x="670" y="812" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10" fill="#374151">东外门进（东南）</text>
+<circle cx="548" cy="830" r="10" fill="#fff" stroke="#b91c1c" stroke-width="1.5"/>
+<text x="548" y="834" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10" font-weight="800" fill="#b91c1c" text-anchor="middle">2</text>
+<text x="566" y="834" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10.5" font-weight="700" fill="#1f2937">展区一 右下</text>
+<text x="670" y="834" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10" fill="#374151">东墙南端入 → 西墙北端出</text>
+<circle cx="548" cy="852" r="10" fill="#fff" stroke="#b91c1c" stroke-width="1.5"/>
+<text x="548" y="856" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10" font-weight="800" fill="#b91c1c" text-anchor="middle">3</text>
+<text x="566" y="856" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10.5" font-weight="700" fill="#1f2937">展区二 左下</text>
+<text x="670" y="856" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10" fill="#374151">东墙北端入 → 北墙西端出</text>
+<circle cx="548" cy="874" r="10" fill="#fff" stroke="#b91c1c" stroke-width="1.5"/>
+<text x="548" y="878" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10" font-weight="800" fill="#b91c1c" text-anchor="middle">4</text>
+<text x="566" y="878" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10.5" font-weight="700" fill="#1f2937">展区三 左上</text>
+<text x="670" y="878" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10" fill="#374151">南墙西端入 → 东墙北端出</text>
+<circle cx="548" cy="896" r="10" fill="#fff" stroke="#b91c1c" stroke-width="1.5"/>
+<text x="548" y="900" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10" font-weight="800" fill="#b91c1c" text-anchor="middle">5</text>
+<text x="566" y="900" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10.5" font-weight="700" fill="#1f2937">展区四 右上</text>
+<text x="670" y="900" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10" fill="#374151">西墙北端入 → 东墙南端出</text>
+<circle cx="548" cy="918" r="10" fill="#fff" stroke="#b91c1c" stroke-width="1.5"/>
+<text x="548" y="922" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10" font-weight="800" fill="#b91c1c" text-anchor="middle">6</text>
+<text x="566" y="922" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10.5" font-weight="700" fill="#1f2937">出口厅</text>
+<text x="670" y="922" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10" fill="#374151">东外门出（东北），可一键回入口</text>
+<text x="540" y="950" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="9.5" fill="#374151">连接：厅间以 2.4m 暗廊过渡（净高 4.0m＋地脚微光，过门 300ms 黑场做分区加载）。</text>
+<text x="540" y="967" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="9.5" fill="#374151">门位全部对角或偏端布置，单厅展线覆盖最大化；全段强制动线长 ≈104m。</text>
+<text x="540" y="984" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="9.5" fill="#374151">厅间 2.4m 夹道除暗廊外全部封死为暗腔（设备/声学腔，不可进入）。</text>
+<line x1="540" y1="1003" x2="1040" y2="1003" stroke="#e5e7eb"/>
+<text x="540" y="1023" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="9" fill="#6b7280">挂位</text>
+<text x="540" y="1039" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="11" font-weight="700" fill="#1f2937">15/厅 × 4 = 60 幅精选</text>
+<text x="668" y="1023" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="9" fill="#6b7280">素材库 148 张</text>
+<text x="668" y="1039" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="11" font-weight="700" fill="#1f2937">精选 60 · 落选 88</text>
+<text x="796" y="1023" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="9" fill="#6b7280">挂距契约</text>
+<text x="796" y="1039" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="11" font-weight="700" fill="#1f2937">全馆统一中心距 3.5m（框边净隙 ≥1.36m）</text>
+<text x="924" y="1023" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="9" fill="#6b7280">室内面积</text>
+<text x="924" y="1039" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="11" font-weight="700" fill="#1f2937">约 1045 ㎡（厅936＋廊13＋门厅96）</text>
+<text x="1100" y="118" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="12.5" font-weight="700" fill="#1f2937">一、空间参数（v6 高厅 · 圆拱门 · 白盒美术馆）</text>
+<text x="1100" y="138" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10.5" fill="#374151" >展区（×4）</text>
+<text x="1280" y="138" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10.5" fill="#374151" >18m × 13m × 净高5.2m</text>
+<text x="1100" y="155" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10.5" fill="#374151" >暗廊（×3）</text>
+<text x="1280" y="155" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10.5" fill="#374151" >横向净宽2.4m × 净高4.0m</text>
+<text x="1100" y="172" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10.5" fill="#374151" >入口厅 / 出口厅</text>
+<text x="1280" y="172" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10.5" fill="#374151" >进深8 × 面宽6 × 高5.0m</text>
+<text x="1100" y="189" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10.5" fill="#374151" >门厅位置</text>
+<text x="1280" y="189" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10.5" fill="#374151" >同在东立面：南入 / 北出</text>
+<text x="1100" y="206" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10.5" fill="#374151" >占地</text>
+<text x="1280" y="206" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10.5" fill="#374151" >45.8m × 28.4m</text>
+<text x="1100" y="223" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10.5" fill="#374151" font-weight="700">强制动线长</text>
+<text x="1280" y="223" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10.5" fill="#1f2937" font-weight="700">≈104m（含门厅与暗廊）</text>
+<text x="1100" y="240" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10.5" fill="#374151" >门洞</text>
+<text x="1280" y="240" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10.5" fill="#374151" >半圆拱 · 拱顶全馆统一 3.5m（起拱 2.0/2.6）· 拱环 0.14m；主门/出口净宽3.0 · 暗廊门 1.8</text>
+<text x="1100" y="266" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="12.5" font-weight="700" fill="#1f2937">二、容量核算（自适应精选）</text>
+<text x="1100" y="286" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10.5" fill="#374151" >每厅长墙（18m）</text>
+<text x="1280" y="286" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10.5" fill="#374151" >4~5 幅 × 2（容量驱动）</text>
+<text x="1100" y="303" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10.5" fill="#374151" >每厅端墙（13m）</text>
+<text x="1280" y="303" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10.5" fill="#374151" >2~3 幅 × 2（容量驱动）</text>
+<text x="1100" y="320" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10.5" fill="#374151" font-weight="700">每厅挂位</text>
+<text x="1280" y="320" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10.5" fill="#1f2937" font-weight="700">15 位 × 4 厅 = 60（端部留白≥1.45m）</text>
+<text x="1100" y="337" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10.5" fill="#374151" font-weight="700">素材库 148 张</text>
+<text x="1280" y="337" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10.5" fill="#1f2937" font-weight="700">精选 60 ｜ 落选 88（库全保留）</text>
+<text x="1100" y="354" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10.5" fill="#374151" font-weight="700">挂距契约</text>
+<text x="1280" y="354" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10.5" fill="#1f2937" font-weight="700">全馆统一中心距 3.5m（框边净隙 ≥1.36m）</text>
+<text x="1100" y="380" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="12.5" font-weight="700" fill="#1f2937">三、图例</text>
+<line x1="1100" y1="396" x2="1126" y2="396" stroke="#111827" stroke-width="4"/>
+<text x="1136" y="400" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10.5" fill="#374151">墙体（厚 0.2m，哑光黑）</text>
+<rect x="1100" y="409" width="26" height="9" fill="#e2e0da"/>
+<text x="1136" y="417" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10.5" fill="#374151">暗廊（封闭，仅通行）</text>
+<rect x="1100" y="425" width="26" height="9" fill="url(#voidDot)" stroke="#d6d3cd"/>
+<text x="1136" y="434" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10.5" fill="#374151">暗腔（封死，不可进入）</text>
+<line x1="1100" y1="445" x2="1126" y2="445" stroke="#b45309" stroke-width="5"/>
+<text x="1136" y="451" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10.5" fill="#374151">挂位（精选 · 全馆中心距 3.5m）</text>
+<circle cx="1113" cy="462" r="3" fill="#d97706"/>
+<text x="1136" y="468" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10.5" fill="#374151">射灯位（暖白 · 每幅一灯）</text>
+<line x1="1100" y1="478" x2="1126" y2="478" stroke="#b91c1c" stroke-width="1.6" stroke-dasharray="6 4"/>
+<text x="1136" y="485" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10.5" fill="#374151">蛇形参观动线</text>
+<text x="1100" y="512" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="12.5" font-weight="700" fill="#1f2937">四、动线与碰撞规则（实现口径）</text>
+<text x="1100" y="532" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10" fill="#374151">• 入口厅：标题墙＋简介＋操作说明，点击/按键进入</text>
+<text x="1100" y="548" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10" fill="#374151">• 暗廊：净高4.0m、地脚微光，过门 300ms 黑场分区加载</text>
+<text x="1100" y="564" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10" fill="#374151">• 出口厅：致谢墙＋作品数，可一键回入口</text>
+<text x="1100" y="580" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10" fill="#374151">• 碰撞：Octree＋胶囊(r=0.35m)，官方 FPS 方案</text>
+<text x="1100" y="596" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10" fill="#374151">• 禁穿墙；沿碰撞法线滑动，对角过门不卡死</text>
+<text x="1100" y="612" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10" fill="#374151">• 门洞1.8m ＞ 胶囊直径0.7m（通过比 2.57）</text>
+<text x="1100" y="628" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10" fill="#374151">• R 键复位回入口；小地图 HUD 常驻</text>
+<text x="1100" y="656" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="12.5" font-weight="700" fill="#1f2937">五、版本记录</text>
+<text x="1100" y="676" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10" fill="#374151">v5 罗马拱门：一洞一环挤出成型；V 形拼装错位（白柱）结构性根除。</text>
+<text x="1100" y="694" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10" fill="#374151">v6 ① 修 CW 暗廊门洞越界：净宽 1.8 而门洞 at=1.2 → 东侧 −0.3m 开进封闭暗腔；横向改 2.4m。</text>
+<text x="1100" y="712" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10" fill="#374151">v6 ② 修 H4 出口门越界：at=1.2/w3 → 南侧 −0.3m，拱环绕出墙角；移至 z=17.4，两侧留 0.5m 墙垛。</text>
+<text x="1100" y="730" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10" fill="#374151">v6 ③ 挂位改全馆统一中心距 3.5m：v5 逐墙自适应产生 2.67/3.02/3.37/3.70 四种节奏，且最窄净隙仅 0.53m。</text>
+<text x="1100" y="748" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10" fill="#374151">v6 ④ 拱顶 3.2→3.5m、暗廊净高 3.6→4.0m，拱环 0.14m；三档预设 ?portal=gallery|monumental|layered。</text>
+<text x="60" y="1096" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="9.5" fill="#6b7280">制图：gallery3d / scripts/gen-floorplan.mjs 数据驱动生成 ｜ 确认后本图作为施工（程序化建墙）与最终交付平面图的同源基线</text>
+</svg>
