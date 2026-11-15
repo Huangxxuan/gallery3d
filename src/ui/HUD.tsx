@@ -177,9 +177,9 @@ export default function HUD() {
           zIndex: 20,
         }}>
           <div style={{ textAlign: 'center', color: '#e8f6ff', maxWidth: 620, padding: '0 24px' }}>
-            <div style={{ fontSize: 30, fontWeight: 800, letterSpacing: 6, marginBottom: 14, textShadow: '0 0 22px rgba(120,220,255,0.45)' }}>AI 数字摄影艺术展</div>
+            <div style={{ fontSize: 30, fontWeight: 800, letterSpacing: 6, marginBottom: 14, textShadow: '0 0 22px rgba(120,220,255,0.45)' }}>3D 摄影展布展系统</div>
             <div style={{ fontSize: 12, color: '#6f93ad', letterSpacing: 2, marginBottom: 30 }}>
-              60 幅作品 · 四主题展厅 · 白盒美术馆
+              示例展 · 60 幅作品 · 四主题展厅 · 白盒美术馆
             </div>
             <button
               onClick={() => useUI.getState().setWalking(true)}

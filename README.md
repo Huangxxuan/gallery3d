@@ -1,103 +1,243 @@
-# AI 数字摄影艺术展 · 60 幅
+# 3D 摄影展布展系统
 
 [English](README.en.md) · **简体中文**
 
 [![Deploy to GitHub Pages](https://github.com/Huangxxuan/gallery3d/actions/workflows/deploy.yml/badge.svg)](https://github.com/Huangxxuan/gallery3d/actions/workflows/deploy.yml)
 [![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
 
-![AI 数字摄影艺术展 · 60 幅](docs/social-preview.jpg)
+![第一人称漫游的 3D 展厅](docs/shot-hall-1.jpg)
 
-## 在线访问
+**把一个图片文件夹，变成一个可以走进去的线上展厅。**
 
-**https://huangxxuan.github.io/gallery3d/**
+不是视频、不是全景图、不是套模板的 H5。它在浏览器里实时渲染一栋真实尺度的展馆：墙、门洞、拱门、天花灯带、射灯光斑、地面反射、画框装裱全部由代码生成。观众用键盘走进去，站在画前看，点一下进大图。
 
-浏览器打开即可进入，无需安装、无需登录。桌面端体验最佳（需要 WebGL 与键盘）。
+开箱自带一场 60 幅的摄影展作为示例；换掉图片和展题，它就是你的展。
 
-## 这是什么
+**在线示例** — <https://huangxxuan.github.io/gallery3d/>（桌面端 Chrome / Safari / Edge，需 WebGL 与键盘）
 
-一个可第一人称漫游的 **3D 线上摄影美术馆**。四座主题展厅、60 幅摄影作品全部按真实展陈逻辑上墙：
+---
 
-| 展厅 | 展题 | 作品数 |
+## 一、它能搭什么
+
+| 场景 | 怎么用 |
+|---|---|
+| **摄影个展 / 联展** | 按主题分厅，一厅一色温，作品自动上墙 |
+| **艺术作品展** | 竖幅、横幅、方形混排，等比零裁剪，不拉伸不变形 |
+| **文物 / 藏品展** | 固定机位 + 单件大图，适合看细节的展品 |
+| **毕业展 / 团队作品集** | 一个仓库一套展，改图片即可换展 |
+| **景区、门店、机构的线上展馆** | 静态站点，可挂 GitHub Pages / 任意 CDN |
+
+![林间生灵展厅](docs/shot-hall-4.jpg)
+
+---
+
+## 二、三分钟看懂它怎么工作
+
+```
+你的图片文件夹
+      │  scripts/prepare-assets.mjs（自动转三档尺寸 + 读取真实宽高）
+      ▼
+public/manifest.json  ← 展品清单：谁上墙、去哪个厅、什么朝向
+      │  src/three/placements.ts（自动布展算法）
+      ▼
+墙面挂位  ← 定距 + 居中 + 端部留白，零裁剪
+      │  React Three Fiber 实时渲染
+      ▼
+浏览器里的 3D 展厅
+```
+
+**布展是算出来的，不是摆出来的。** 你只提供「哪些图、去哪个厅」，剩下的自动完成：
+
+- 相邻画心中心距恒为 **3.5 m**，不够一档的余量全部转为端部留白（留白才是策展感）
+- 挂位距墙角 / 门洞边 ≥ **1.45 m**，画框永不压门洞
+- 竖幅定高 2.1 m、横幅定宽 1.9 m，极端长宽比缩进 2.4 × 2.3 m 盒内，**永不裁剪、永不拉伸**
+- 每厅默认精选 **15** 幅（`SELECT_CAP`），超出按题材均匀采样，不扎堆
+- 大图机位按画高自适应（1.35–2.6 m），点击即飞到画心正前方
+
+![入口厅](docs/shot-lobby.jpg)
+
+---
+
+## 三、换成你自己的展
+
+四种改动，从必做到可选。**只做第 1、2 步就能跑起来一场新展。**
+
+### 第 1 步 ｜ 整理图片（必做）
+
+按「分类文件夹」放图，脚本按文件夹映射展厅：
+
+```
+my-photos/
+├── 城市/          # 分类名 = 后续配到某个厅
+│   ├── a.jpg
+│   └── b.jpg
+└── 山海/
+    └── c.jpg
+```
+
+支持 `jpg / jpeg / png / heic`（macOS 用系统 `sips` 转换，无需装任何第三方库）。
+
+### 第 2 步 ｜ 改展厅映射（必做）
+
+打开 [`scripts/prepare-assets.mjs`](scripts/prepare-assets.mjs)，改 `HALL_GROUPS`：
+
+```js
+const HALL_GROUPS = [
+  { hall: 'H1', theme: '我的第一厅', cats: ['城市'] },
+  { hall: 'H2', theme: '我的第二厅', cats: ['山海'] },
+  { hall: 'H3', theme: '我的第三厅', cats: ['人像', '街头'] },  // 一个厅可吃多个文件夹
+  { hall: 'H4', theme: '我的第四厅', cats: ['静物'] },
+]
+```
+
+然后跑：
+
+```bash
+PHOTO_SRC=/path/to/my-photos node scripts/prepare-assets.mjs
+```
+
+（不设 `PHOTO_SRC` 时默认读 `~/Downloads/摄影作品`。）
+
+产出三档 JPEG + 新的 `public/manifest.json`：主档长边 2048 / 远厅 1024 / 大图 4096。
+
+### 第 3 步 ｜ 改厅名与主色（强烈建议）
+
+打开 [`src/domain/themes.ts`](src/domain/themes.ts)，一个厅一行：
+
+```ts
+export const THEMES: Record<string, HallTheme> = {
+  H1: { name: '你的厅名', en: 'YOUR HALL', accent: '#ffb054', glow: '#ffcf8a' },
+  ...
+}
+```
+
+`accent` 决定门楣展牌与 UI 色，`glow` 决定灯带辉光。改完厅名自动出现在墙上展牌、左上角与入口文字上。
+
+### 第 4 步 ｜ 改展名（可选）
+
+展名目前写在三处，全文替换即可：
+
+| 文件 | 位置 |
+|---|---|
+| [`src/ui/HUD.tsx`](src/ui/HUD.tsx) | 启动页大标题与副标题 |
+| [`src/three/GalleryWorld.tsx`](src/three/GalleryWorld.tsx) | 入口厅墙面发光字（两处） |
+| [`index.html`](index.html) | 浏览器标题、`og:*` 分享卡 |
+
+改完执行：
+
+```bash
+export PATH="$HOME/.local/node/bin:$PATH"
+npm install
+npm run dev        # http://localhost:5173/
+```
+
+### 改动对照表
+
+| 想改什么 | 改哪里 | 需要重跑素材管线 |
 |---|---|---|
-| H1 | 香港故事 | 15 |
-| H2 | 双城纪事 | 15 |
-| H3 | 海与港 | 15 |
-| H4 | 林间生灵 | 15 |
+| 换图片 | 换文件夹内容 + `HALL_GROUPS` | 是 |
+| 换厅名 / 主色 | `src/domain/themes.ts` | 否 |
+| 换展名 | 上表三处 | 否 |
+| 换分享卡 | `docs/social-preview.jpg` + `public/social-preview.jpg`（1280×640） | 否 |
+| 每厅上墙数量 | `SELECT_CAP`（`src/three/placements.ts`） | 否 |
+| 厅数与建筑尺寸 | `src/domain/gallery.ts` 的 `SPACES` | 否 |
 
-展厅采用「白盒」建筑语言：白墙、浅灰地面、共享天花框、拱门暗钢环与射灯光斑；入口厅与出口厅为银白语言。作品以香槟钛银拉丝框 + 白卡纸装裱，点击作品可进入大图模式查看高清版本。
+---
 
-## 使用方法
+## 四、操作方式
 
-进入后先看到启动页，点击「进入」开始漫游（或按回车）。
+进入后先见启动页，点「点击进入」按钮开始。
 
 | 操作 | 键位 / 方式 |
 |---|---|
 | 前后左右行走 | `W` `A` `S` `D` 或方向键 |
 | 快走 | 按住 `Shift` |
-| 环视 | 按住鼠标左键拖拽；鼠标移动微调 |
+| 环视 | 按住鼠标左键拖拽；鼠标移动做微调 |
 | 看大图 | 点击墙面作品 |
 | 大图内翻页 | `←` `→`（或 `A` `D`） |
 | 退出大图 | `Esc` / `Backspace` |
 | 自动巡游 | `P` 切换 |
 | 返回入口 | `R` |
 
-其他：`?cam=x,z,yaw,pitch` 可直接定位机位，`?artview=0` 进入调试观察视图，用于截图验收。
+调试参数（验收截图用）：`?cam=x,z,yaw,pitch` 直接定位机位，`?artview=n` 站到第 n 幅画前，`?focus=n` 直接进入第 n 幅大图。
 
-## 技术栈
+---
 
-- **渲染**：three.js 0.186 + React Three Fiber 9 + @react-three/drei
-- **框架**：React 19 + TypeScript 7，Vite 8 构建
-- **状态**：zustand 5（模式机 / 焦点作品 / 当前展厅）
-- **测试**：Vitest 5（布展规则、分区、光斑几何、机位快照）
-- **部署**：GitHub Actions → GitHub Pages（push `main` 自动发布）
+## 五、技术栈
 
-## 目录结构
+| 层 | 选型 |
+|---|---|
+| 渲染 | three.js 0.186 + React Three Fiber 9 + @react-three/drei |
+| 框架 | React 19 + TypeScript 7，Vite 8 构建 |
+| 状态 | zustand 5（模式机 / 焦点作品 / 当前展厅） |
+| 测试 | Vitest 5（布展规则、分区、光斑几何、机位快照） |
+| 部署 | GitHub Actions → GitHub Pages，push `main` 自动发布 |
+
+全部为前端静态资源，无后端、无数据库、无外部字体 CDN（文字墙贴用 Canvas 运行时生成，离线可用）。
+
+---
+
+## 六、目录结构
 
 ```
 src/
-  domain/       展厅几何、布展规则、主题配置（纯数据与纯函数，可测试）
-  three/        场景渲染：墙体/拱门/天花/画作/纹理分级/玩家胶囊碰撞/相机
-  state/        zustand 状态：漫游/大图模式、焦点作品、区域判定
-  ui/           HUD 覆盖层：启动页、操作提示、大图底栏
-  spike/        光斑、分区、机位等实验场景（研究用，非线上路径）
+  domain/       展厅几何、挂位算法、主题配置（纯数据 + 纯函数，有单测）
+  three/        场景渲染：墙体 / 拱门 / 天花 / 画作 / 纹理分级 / 碰撞 / 相机 / 文字墙贴
+  state/        zustand 状态机
+  ui/           HUD：启动页、操作提示、大图底栏
+  spike/        光斑与机位实验场景（研究用，不在线上路径）
 public/
-  manifest.json 作品清单（id / 三级图路径 / 主题 / 展厅 / 尺寸）
-  photos/       主档（长边 1300）；lo/ 远厅低模；hd/ 大图
+  manifest.json 展品清单（id / 三档图路径 / 展厅 / 真实宽高）
+  photos/       三级图：主档 · lo/ 远厅 · hd/ 大图
 scripts/
-  prepare-assets.mjs  素材管线：源图 → 三级 JPEG + manifest v2
-docs/          设计口径、ADR、交接文档（AGENTS.md / RETROSPECTIVE.md / NEXT-STEPS.md）
+  prepare-assets.mjs  素材管线：源图 → 三档 JPEG + manifest
+  gen-floorplan.mjs   平面图生成
+docs/          设计口径、ADR、交接文档、分享卡与截图
 ```
 
-## 本地运行
+---
 
-需要 Node 18+（CI 使用 Node 22）。
+## 七、本地运行与部署
 
 ```bash
-export PATH="$HOME/.local/node/bin:$PATH"   # 非交互 shell 必需，按你的 Node 安装位置调整
+export PATH="$HOME/.local/node/bin:$PATH"   # 非交互 shell 需要，按你本机 Node 位置调整
 npm install
-npm run dev        # http://localhost:5173/
-npm test           # Vitest 单元测试
+npm run dev        # 开发服务器
+npm test           # 单元测试
 npm run build      # 产出 dist/
 npm run preview    # 预览构建产物
 ```
 
-## 构建与部署
+推送 `main` 后，`.github/workflows/deploy.yml` 自动执行 `npm ci` → `npm run build` → 发布 Pages。
 
-`.github/workflows/deploy.yml` 在 push 到 `main` 时执行：`npm ci` → `npm run build` → 上传 `dist/` → 发布到 GitHub Pages。
+[`vite.config.ts`](vite.config.ts) 使用 `base: './'`：同一份 `dist/` 既能跑根路径（本地 / 离线包 / U 盘分发），也能跑 Pages 子路径 `/gallery3d/`。
 
-`vite.config.ts` 使用 `base: './'`，同一份构建产物既能跑根路径（本地 / 离线包），也能跑 Pages 子路径 `/gallery3d/`。
+---
 
-## 素材管线
+## 八、已知边界
 
-```bash
-node scripts/prepare-assets.mjs
-```
+说清楚比藏着好，这些是设计取舍，不是待修 bug：
 
-从 `~/Downloads/摄影作品/<分类>/*.{jpg,jpeg,png,heic}` 读取原图，用 macOS `sips` 生成三档 JPEG（主档长边 2048、远厅 1024、大图 4096，本仓库线上版本进一步压缩到 1300 / 800 / 1600 以控制仓库体积），并写出 `public/manifest.json`。
+- **固定四厅**。建筑是一座 2×2 组团 + 蛇形动线的完整展馆，改厅数需要改 `SPACES` 几何（含门洞不变量测试），不是配置项。
+- **每厅上限 15 幅**，四厅共 60。想挂更多，改 `SELECT_CAP` 并确认墙长容量够。
+- **无后台 CMS**。展品清单是一个 JSON 文件，靠 git 管理版本。
+- **需要 WebGL 与键盘**。移动端可以看，但漫游体验按桌面设计。
+- **仓库体积会随作品线性增长**。示例 148 张图约 115 MB，GitHub Pages 上限 1 GB；作品量大时建议把 `public/photos/` 放对象存储或 CDN。
 
-## 许可
+---
 
-- **代码**：Apache License 2.0，见 [LICENSE](LICENSE)。
-- **摄影作品与展览图像**（`public/photos/**`、`docs/social-preview.jpg`）：版权归作者所有，**不适用** Apache-2.0，未经许可不得转载、商用或再分发。
+## 九、许可
 
-如需引用本项目代码，请保留 LICENSE 与版权声明；如需使用作品图片，请先联系作者获得授权。
+- **代码**：Apache License 2.0，见 [LICENSE](LICENSE)。可商用、可修改、可闭源分发，保留版权声明即可。
+- **示例摄影作品与展厅截图**（`public/photos/**`、`docs/*.jpg`）：版权归作者所有，**不适用** Apache-2.0，未经许可不得转载、商用或再分发。
+
+想用这套系统搭自己的展：直接 fork，把图片换成你自己的，作品版权归你。
+
+---
+
+## 十、文档口径
+
+- **唯一门面文档**：本 README（中文）+ [README.en.md](README.en.md)（英文），两份内容对等，只改一处视为未完成。
+- **工程交接包**：[`AGENTS.md`](AGENTS.md) → [`docs/handoff/`](docs/handoff/)，含项目地图、15 条实战踩坑、后续任务书。
+- **冲突裁决**：README 与交接包冲突时，以交接包为准；`docs/MASTER.md` 与 `docs/adr/` 为早期历史稿，不作现行口径。
+- **更新触发**：改展厅几何、布展算法、素材管线、部署方式、许可条款时，同步更新本 README 对应章节。

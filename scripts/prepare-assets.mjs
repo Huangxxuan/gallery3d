@@ -9,11 +9,13 @@
 import { execFileSync } from 'node:child_process'
 import { existsSync, mkdirSync, readdirSync, rmSync, writeFileSync } from 'node:fs'
 import { homedir } from 'node:os'
-import { dirname, join } from 'node:path'
+import { dirname, join, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 const ROOT = dirname(dirname(fileURLToPath(import.meta.url)))
-const SRC = join(homedir(), 'Downloads', '摄影作品')
+// 源图目录：默认 ~/Downloads/摄影作品，可用环境变量覆盖：
+//   PHOTO_SRC=/path/to/my-photos node scripts/prepare-assets.mjs
+const SRC = process.env.PHOTO_SRC ? resolve(process.env.PHOTO_SRC) : join(homedir(), 'Downloads', '摄影作品')
 const OUT_DIR = join(ROOT, 'public', 'photos')
 const MANIFEST = join(ROOT, 'public', 'manifest.json')
 
