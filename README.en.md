@@ -7,13 +7,15 @@
 
 ![A first-person walkable 3D gallery](docs/shot-hall-1.jpg)
 
-**Turn the photographs you shot into a 3D gallery you can walk into.**
+**Turn the photographs you shot into a 3D photography exhibition you can walk into.**
 
-Open it in a browser and walk around: move with the keyboard, turn to face the walls, stand in front of a work and look closely, click once for the large view.
+Open it in a browser, walk the show, roam.
 
-Walls, door openings, ceiling coves, spotlights, floors, and frames are rendered in real time at true scale.
+It renders a true-scale building in real time in the browser; visitors interact with the keyboard, walk in, stand in front of a work and look, click once for the large view.
 
-The 60 works here are my own photographs — the demo is ready to walk into. Swap in your images and titles, and it becomes your show.
+This 3D photography exhibition is made from 60 of my own photographs — ready to experience out of the box;
+
+swap in your own images and exhibition title, and deploy your exhibition in one click.
 
 **Live demo** — <https://huangxxuan.github.io/gallery3d/> (desktop Chrome / Safari / Edge; requires WebGL and a keyboard)
 
