@@ -7,11 +7,13 @@
 
 ![A first-person walkable 3D gallery](docs/shot-hall-1.jpg)
 
-**Turn a folder of images into a gallery you can walk through.**
+**Turn the photographs you shot into a 3D gallery you can walk into.**
 
-Not a video, not a 360° panorama, not a template-driven landing page. It renders a full-scale building in the browser in real time: walls, door openings, arches, ceiling light coves, spotlight pools, reflective floors, and mounted frames are all generated from code. Visitors walk in with a keyboard, stand in front of a work, click once for the large view.
+Open it in a browser and walk around: move with the keyboard, turn to face the walls, stand in front of a work and look closely, click once for the large view.
 
-Out of the box it ships a 60-work photography exhibition as a demo. Swap the images and the titles, and it becomes yours.
+Walls, door openings, ceiling coves, spotlights, floors, and frames are rendered in real time at true scale.
+
+The 60 works here are my own photographs — the demo is ready to walk into. Swap in your images and titles, and it becomes your show.
 
 **Live demo** — <https://huangxxuan.github.io/gallery3d/> (desktop Chrome / Safari / Edge; requires WebGL and a keyboard)
 
@@ -228,16 +230,27 @@ Stated plainly rather than hidden — these are deliberate trade-offs, not pendi
 
 ## 9. License
 
-- **Code**: Apache License 2.0, see [LICENSE](LICENSE). Commercial use, modification, and closed-source distribution are permitted with attribution.
-- **Demo photographs and screenshots** (`public/photos/**`, `docs/*.jpg`): all rights reserved by the author, **not** covered by Apache-2.0. Redistribution, commercial use, or republication requires permission.
+### Code: Apache License 2.0
 
-To build your own show on this system: fork it, swap in your own images, and your work stays yours.
+Full text in [LICENSE](LICENSE).
 
----
+**You may**
 
-## 10. Documentation authority
+- Copy, modify, merge, publish, and distribute this code
+- Use it commercially (Apache-2.0 places no field-of-use restriction; this cannot be excluded)
+- Distribute derivative works under a closed licence
 
-- **Canonical entry documents**: this README (English) and [README.md](README.md) (Chinese). They are kept in parity; changing only one counts as incomplete.
-- **Engineering handoff pack**: [`AGENTS.md`](AGENTS.md) → [`docs/handoff/`](docs/handoff/), covering the project map, 15 field-tested pitfalls, and the follow-up task book.
-- **Conflict resolution**: if this README and the handoff pack disagree, the handoff pack wins. `docs/MASTER.md` and `docs/adr/` are early historical drafts and are not current authority.
-- **Update trigger**: hall geometry, hanging algorithm, asset pipeline, deployment method, or licence changes must be reflected in the matching section here.
+**You must**
+
+- Keep [LICENSE](LICENSE) and all existing copyright, patent, trademark, and attribution notices
+- State that you changed any files you modified
+- Ship a copy of the Apache-2.0 licence with any distribution
+- Not use the author's name or this project's marks to endorse your derivative work
+
+The project is provided "as is", without warranties or conditions of any kind, and the author accepts no liability for its use.
+
+### Demo images: not covered by Apache-2.0
+
+`public/photos/**` and `docs/*.jpg` are my own photographs and screenshots; all rights reserved. Redistribution, commercial use, or republication requires permission.
+
+To build your own show: fork it, swap in your own images. The code licence stays the same, and your work stays yours.
